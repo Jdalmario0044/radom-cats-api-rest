@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consume tu primera API REST</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <!-- Random cats -->
+        <section id="randomCats" class="main-container">
+            <h1 class="title">Random cats</h1>
+            <div class="cards-container">
+              <div class="product-card">
+                <img alt="Cat image" id="catImg1">
+                <div class="product-info">
+                  <button id="btn_save_favCat1" class="btn-primary" onclick="saveFavoriteCat()">
+                    ❤Add to favorites
+                  </button>
+                </div>
+              </div>
+              <div class="product-card">
+                <img alt="Cat image" id="catImg2">
+                <div class="product-info">
+                  <button id="btn_save_favCat2" class="btn-primary" onclick="saveFavoriteCat()">
+                    ❤Add to favorites
+                  </button>
+                </div>
+              </div>
+              <div class="product-card">
+                <img alt="Cat image" id="catImg3">
+                <div class="product-info">
+                  <button id="btn_save_favCat3" class="btn-primary" onclick="saveFavoriteCat()">
+                    ❤Add to favorites
+                  </button>
+                </div>
+              </div>
+              </div>
+            </div>
+        </section>
+        <!-- Buttons section -->
+        <div class="btns-section">
+            <button class="btn-primary" onclick="loadRandomCats()">Reload</button>
+        </div>
+        <!-- Cat form -->
+        <section id="uploadcat">
+          <h2>upload your cat in internet xd</h2>
+          <form id="uploadform">
+            <input id="file" type="file" name="file"> <br>
+            <button id="" class="btn-primary" type="button" onclick="uploadCatImage()">
+              Upload cat image
+            </button>
+          </form>
+        </section>
+        <!-- Favorite cats -->
+        <section id="favoriteCats" class="main-container secound-container">
+          <h2 class="title">Favorite cats</h2>
+          <div class="cards-container" id="cards_container">
+            <!-- <div class="product-card">
+              <img alt="Cat image" id="catImg1">
+              <div class="product-info">
+                <button class="btn-primary" id="btn_fav_1" onclick="">
+                  Remove favorite
+                </button>
+              </div>
+            </div> -->
+          </div>
+        </section>
+        <p id="error_p"></p>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"> </script>
+</body>
+</html>
